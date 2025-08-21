@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>[[Your Name]] — [[One‑line Hook]]</title>
+  <meta name="description" content="[[1–2 sentence summary about who you are and what you do.]]">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <meta property="og:title" content="[[Your Name]] — [[One‑line Hook]]" />
+  <meta property="og:description" content="[[1–2 sentence summary about who you are and what you do.]]" />
+  <meta property="og:image" content="[[https://your-domain.com/og-image.jpg]]" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="[[/favicon.ico]]">
+  <style>
+    :root{ --bg:#F5F2ED; --ink:#3E3E3E; --accent:#2E3B32; --muted:#7E8F7B; --soft:#ECE6DA; --clay:#9D7C66; }
+    html{ scroll-behavior:smooth; }
+    .container-nice{ max-width:1100px; margin:0 auto; }
+  </style>
+  <script>
+    // Lightweight theme toggle (optional)
+    function toggleTheme(){ document.documentElement.classList.toggle('dark'); }
+  </script>
+</head>
+<body class="bg-[var(--bg)] text-[var(--ink)] antialiased">
+  <!-- Top Bar -->
+  <header class="sticky top-0 z-30 backdrop-blur bg-[var(--bg)]/80 border-b border-black/5">
+    <nav class="container-nice px-5 xl:px-0 flex items-center justify-between h-14">
+      <a href="#home" class="font-semibold tracking-tight">[[Your Name]]</a>
+      <div class="hidden sm:flex items-center gap-6 text-sm">
+        <a href="#about" class="hover:text-[var(--accent)]">About</a>
+        <a href="#work" class="hover:text-[var(--accent)]">Work</a>
+        <a href="#services" class="hover:text-[var(--accent)]">Offerings</a>
+        <a href="#testimonials" class="hover:text-[var(--accent)]">Proof</a>
+        <a href="#contact" class="hover:text-[var(--accent)]">Contact</a>
+      </div>
+      <a href="#contact" class="text-sm px-3 py-1.5 rounded-xl bg-[var(--accent)] text-white">Book a chat</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="container-nice px-5 xl:px-0 pt-12 md:pt-20">
+    <div class="grid md:grid-cols-12 gap-8 items-center">
+      <div class="md:col-span-7">
+        <h1 class="text-4xl md:text-6xl font-extrabold leading-tight tracking-tight">
+          [[Your Name]]
+        </h1>
+        <p class="mt-3 text-lg">[[Role tags: e.g., Perception Architect · SEO Strategist · Speaker]]</p>
+        <p class="mt-5 text-xl max-w-2xl">[[One‑line hook: the value you create, for whom, and why it matters.]]</p>
+        <div class="mt-6 flex flex-wrap gap-3">
+          <a href="#work" class="px-4 py-2 rounded-xl bg-[var(--accent)] text-white">See work</a>
+          <a href="#contact" class="px-4 py-2 rounded-xl border border-black/10">Get in touch</a>
+        </div>
+        <div class="mt-4 text-sm text-black/60">Based in [[City, Country]] · Available for [[consulting/speaking/advisory]]</div>
+      </div>
+      <div class="md:col-span-5">
+        <img src="[[/headshot.jpg]]" alt="[[Your Name]] headshot" class="w-full max-w-sm mx-auto rounded-2xl shadow"/>
+      </div>
+    </div>
+  </section>
+
+  <!-- Social proof strip -->
+  <section class="container-nice px-5 xl:px-0 mt-10">
+    <div class="flex flex-wrap items-center gap-6 text-sm opacity-80">
+      <span>Seen in:</span>
+      <img src="[[/logo1.svg]]" alt="Logo 1" class="h-6"/>
+      <img src="[[/logo2.svg]]" alt="Logo 2" class="h-6"/>
+      <img src="[[/logo3.svg]]" alt="Logo 3" class="h-6"/>
+      <a href="[[https://linkedin.com/in/your-handle]]" class="underline">LinkedIn</a>
+      <a href="[[https://instagram.com/your-handle]]" class="underline">Instagram</a>
+      <a href="[[mailto:you@domain.com]]" class="underline">Email</a>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="container-nice px-5 xl:px-0 mt-16">
+    <div class="grid md:grid-cols-12 gap-8">
+      <div class="md:col-span-7">
+        <h2 class="text-2xl font-bold">About</h2>
+        <p class="mt-4 leading-relaxed">[[Short bio: Who you are, what you believe, and how you work. Keep it ~100–150 words.]]</p>
+        <ul class="mt-6 space-y-2 text-sm">
+          <li>→ Based in: [[City]]</li>
+          <li>→ Expertise: [[e.g., SEO Audits, Perception Architecture, Narrative Strategy]]</li>
+          <li>→ Worked with: [[Industries or 3–5 representative names]]</li>
+        </ul>
+      </div>
+      <div class="md:col-span-5">
+        <div class="p-5 rounded-2xl border border-black/10 bg-white/60">
+          <h3 class="font-semibold">Quick facts</h3>
+          <ul class="mt-3 space-y-2 text-sm">
+            <li>⭐ [[Signature framework name]]</li>
+            <li>🎤 [[Talk topic or flagship workshop]]</li>
+            <li>✍️ [[Newsletter/Blog name]]</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work / Projects -->
+  <section id="work" class="container-nice px-5 xl:px-0 mt-16">
+    <h2 class="text-2xl font-bold">Selected Work</h2>
+    <div class="mt-6 grid md:grid-cols-2 gap-6">
+      <!-- Card -->
+      <article class="p-5 rounded-2xl border border-black/10 bg-white/70">
+        <h3 class="font-semibold">[[Project/Client A]]</h3>
+        <p class="mt-2 text-sm">[[One-line result: e.g., From invisible to inbound leads in 90 days]]</p>
+        <ul class="mt-3 text-sm list-disc pl-5 space-y-1">
+          <li>[[What you did]]</li>
+          <li>[[How you measured it]]</li>
+          <li>[[Outcome/quote]]</li>
+        </ul>
+        <a href="[[/case-a.pdf]]" class="inline-block mt-3 text-[var(--accent)] underline">Read case →</a>
+      </article>
+      <article class="p-5 rounded-2xl border border-black/10 bg-white/70">
+        <h3 class="font-semibold">[[Project/Client B]]</h3>
+        <p class="mt-2 text-sm">[[One-line result]]</p>
+        <ul class="mt-3 text-sm list-disc pl-5 space-y-1">
+          <li>[[What you did]]</li>
+          <li>[[How you measured it]]</li>
+          <li>[[Outcome/quote]]</li>
+        </ul>
+        <a href="[[/case-b.pdf]]" class="inline-block mt-3 text-[var(--accent)] underline">Read case →</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="container-nice px-5 xl:px-0 mt-16">
+    <h2 class="text-2xl font-bold">Offerings</h2>
+    <div class="mt-6 grid md:grid-cols-3 gap-6">
+      <div class="p-5 rounded-2xl border border-black/10 bg-white/70">
+        <h3 class="font-semibold">[[Service 1]]</h3>
+        <p class="mt-2 text-sm">[[Who it’s for + outcome in one line.]]</p>
+        <p class="mt-3 text-sm">Includes: [[3–5 bullets of inclusions]]</p>
+        <a href="#contact" class="inline-block mt-3 text-[var(--accent)] underline">Enquire →</a>
+      </div>
+      <div class="p-5 rounded-2xl border border-black/10 bg-white/70">
+        <h3 class="font-semibold">[[Service 2]]</h3>
+        <p class="mt-2 text-sm">[[One-line benefit.]]</p>
+        <p class="mt-3 text-sm">Includes: [[3–5 bullets]]</p>
+        <a href="#contact" class="inline-block mt-3 text-[var(--accent)] underline">Enquire →</a>
+      </div>
+      <div class="p-5 rounded-2xl border border-black/10 bg-white/70">
+        <h3 class="font-semibold">[[Service 3]]</h3>
+        <p class="mt-2 text-sm">[[One-line benefit.]]</p>
+        <p class="mt-3 text-sm">Includes: [[3–5 bullets]]</p>
+        <a href="#contact" class="inline-block mt-3 text-[var(--accent)] underline">Enquire →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials" class="container-nice px-5 xl:px-0 mt-16">
+    <h2 class="text-2xl font-bold">Proof</h2>
+    <div class="mt-6 grid md:grid-cols-3 gap-6">
+      <figure class="p-5 rounded-2xl border border-black/10 bg-white/70">
+        <blockquote class="text-sm">“[[Short client quote.]]”</blockquote>
+        <figcaption class="mt-3 text-xs opacity-80">— [[Name, Title, Company]]</figcaption>
+      </figure>
+      <figure class="p-5 rounded-2xl border border-black/10 bg-white/70">
+        <blockquote class="text-sm">“[[Short client quote.]]”</blockquote>
+        <figcaption class="mt-3 text-xs opacity-80">— [[Name, Title, Company]]</figcaption>
+      </figure>
+      <figure class="p-5 rounded-2xl border border-black/10 bg-white/70">
+        <blockquote class="text-sm">“[[Short client quote.]]”</blockquote>
+        <figcaption class="mt-3 text-xs opacity-80">— [[Name, Title, Company]]</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- Writing -->
+  <section id="writing" class="container-nice px-5 xl:px-0 mt-16">
+    <h2 class="text-2xl font-bold">Writing</h2>
+    <div class="mt-6 grid md:grid-cols-2 gap-6 text-sm">
+      <a class="p-5 rounded-2xl border border-black/10 bg-white/70 block hover:shadow" href="[[/essay-1]]">[[Essay title 1]] →</a>
+      <a class="p-5 rounded-2xl border border-black/10 bg-white/70 block hover:shadow" href="[[/essay-2]]">[[Essay title 2]] →</a>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="container-nice px-5 xl:px-0 mt-16 mb-20">
+    <div class="grid md:grid-cols-12 gap-8 items-start">
+      <div class="md:col-span-6">
+        <h2 class="text-2xl font-bold">Let’s talk</h2>
+        <p class="mt-3 text-sm">Prefer email? <a class="underline" href="mailto:[[you@domain.com]]">[[you@domain.com]]</a> · Or book a slot: <a class="underline" href="[[https://cal.com/your-handle]]">[[cal link]]</a></p>
+        <form id="contactForm" class="mt-6 space-y-3 p-5 rounded-2xl border border-black/10 bg-white/70">
+          <input required class="w-full px-3 py-2 rounded-lg border border-black/10" name="name" placeholder="Your name"/>
+          <input required type="email" class="w-full px-3 py-2 rounded-lg border border-black/10" name="email" placeholder="Email"/>
+          <input class="w-full px-3 py-2 rounded-lg border border-black/10" name="company" placeholder="Company (optional)"/>
+          <textarea required class="w-full px-3 py-2 rounded-lg border border-black/10" name="message" rows="4" placeholder="What do you need help with?"></textarea>
+          <button class="px-4 py-2 rounded-xl bg-[var(--accent)] text-white" type="submit">Send</button>
+          <p id="formMsg" class="text-sm opacity-80"></p>
+        </form>
+      </div>
+      <div class="md:col-span-6">
+        <div class="p-5 rounded-2xl border border-black/10 bg-white/70">
+          <h3 class="font-semibold">Elsewhere</h3>
+          <ul class="mt-3 space-y-2 text-sm">
+            <li><a class="underline" href="[[https://linkedin.com/in/your-handle]]">LinkedIn</a></li>
+            <li><a class="underline" href="[[https://instagram.com/your-handle]]">Instagram</a></li>
+            <li><a class="underline" href="[[https://x.com/your-handle]]">Twitter</a></li>
+            <li><a class="underline" href="[[/resume.pdf]]">Resume</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="container-nice px-5 xl:px-0 pb-12 text-xs opacity-70">
+    © <span id="y"></span> [[Your Name]]. Built with ♥.
+  </footer>
+
+  <script>
+    // Year
+    document.getElementById('y').textContent = new Date().getFullYear();
+
+    // Contact form: quick Formspree fallback (replace with your endpoint)
+    document.getElementById('contactForm').addEventListener('submit', async function(e){
+      e.preventDefault();
+      const form = e.target;
+      const data = Object.fromEntries(new FormData(form));
+
+      // OPTION A: Formspree (replace with your ID)
+      const FORMSPREE_URL = 'https://formspree.io/f/[[your-id]]';
+
+      // OPTION B: mailto fallback
+      const mailto = `mailto:[[you@domain.com]]?subject=Website%20enquiry%20from%20${encodeURIComponent(data.name)}&body=${encodeURIComponent(data.message)}%0A%0AEmail:%20${encodeURIComponent(data.email)}%0ACompany:%20${encodeURIComponent(data.company||'')}`;
+
+      try{
+        if(FORMSPREE_URL.includes('[[your-id]]')){
+          window.location.href = mailto; // uses email client if Formspree not configured
+        }else{
+          const res = await fetch(FORMSPREE_URL,{ method:'POST', headers:{'Accept':'application/json'}, body:new FormData(form)});
+          if(res.ok){ document.getElementById('formMsg').textContent = 'Thanks! I will reply soon.'; form.reset(); }
+          else{ window.location.href = mailto; }
+        }
+      }catch(err){ window.location.href = mailto; }
+    });
+  </script>
+
+  <!-- Schema.org (edit placeholders) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "[[Your Name]]",
+    "jobTitle": "[[Role]]",
+    "url": "[[https://your-domain.com]]",
+    "image": "[[https://your-domain.com/headshot.jpg]]",
+    "sameAs": [
+      "[[https://www.linkedin.com/in/your-handle]]",
+      "[[https://instagram.com/your-handle]]",
+      "[[https://x.com/your-handle]]"
+    ]
+  }
+  </script>
+</body>
+</html>
