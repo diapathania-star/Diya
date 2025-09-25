@@ -18,14 +18,15 @@
   <!-- Header -->
   <header class="site" id="top">
     <div class="wrap nav">
-      <a class="brand" href="#top" aria-label="Home">
-        <span class="logo" aria-hidden="true"></span>
-        <span>Diya Pathania</span>
+      <a class="brand" href="logo.jpg" aria-label="Home">
+        <img src="logo.jpg" alt="Diya Pathania logo" class="logo-img" />
+  <span>Diya Pathania</span>
       </a>
       <nav aria-label="Primary">
         <a class="link" href="#services">What I do</a>
         <a class="link" href="#gallery">Gallery</a>
-        <a class="link" href="#case">Case study</a>
+        <!-- Case study hidden for now -->
+        <!-- <a class="link" href="#case">Case study</a> -->
         <a class="link" href="#hub">Articles</a>
         <a class="link" href="#contact">Contact</a>
       </nav>
@@ -36,8 +37,7 @@
     <!-- HERO -->
     <section class="hero hero--split" aria-labelledby="hero-title">
       <div class="hero-text">
-        <h1 id="hero-title">Make your brand easy to find &
-            <br /> Hard to forget.</h1>
+        <h1 id="hero-title">Make your brand easy to find &<br /> Hard to forget.</h1>
         <p class="lead">Technical SEO with calm, proof-first execution. Measurable lift and story clarity.</p>
       </div>
       <figure class="hero-art" role="img" aria-label="Calm abstract texture in sage/clay"></figure>
@@ -46,32 +46,32 @@
     <hr class="divider" />
 
     <!-- ABOUT -->
-<section id="about" aria-labelledby="about-title" class="section about">
-  <h2 class="stitle" id="about-title">About me</h2>
+    <section id="about" aria-labelledby="about-title" class="section about">
+      <h2 class="stitle" id="about-title">About me</h2>
 
-  <div class="about-grid">
-    <figure class="about-photo" role="img" aria-label="Portrait of Diya with calm abstract backdrop"></figure>
+      <div class="about-grid">
+        <figure class="about-photo" role="img" aria-label="Portrait of Diya with calm abstract backdrop"></figure>
 
-    <div class="about-copy">
-      <p class="about-lead">
-        I’m Diya — SEO consultant & perception architect. I help small teams turn
-        <em>confusing websites</em> into <em>clear journeys</em> that rank, convert, and feel human.
-      </p>
+        <div class="about-copy">
+          <p class="about-lead">
+            I’m Diya — SEO consultant & perception architect. I help small teams turn
+            <em>confusing websites</em> into <em>clear journeys</em> that rank, convert, and feel human.
+          </p>
 
-      <ul class="about-points">
-        <li><strong>Proof-first:</strong> start with crawl, speed, structure → then narrative.</li>
-        <li><strong>Low-drama:</strong> clean sitemaps, tidy IA, intent-led content clusters.</li>
-        <li><strong>Human:</strong> microcopy and CTA ladders that reduce friction.</li>
-      </ul>
+          <ul class="about-points">
+            <li><strong>Proof-first:</strong> start with crawl, speed, structure → then narrative.</li>
+            <li><strong>Low-drama:</strong> clean sitemaps, tidy IA, intent-led content clusters.</li>
+            <li><strong>Human:</strong> microcopy and CTA ladders that reduce friction.</li>
+          </ul>
 
-      <div class="about-meta">
-        <span class="chip">India-based</span>
-        <span class="chip">Technical & UX SEO</span>
-        <span class="chip">Perception Architecture</span>
+          <div class="about-meta">
+            <span class="chip">India-based</span>
+            <span class="chip">Technical & UX SEO</span>
+            <span class="chip">Perception Architecture</span>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
     <!-- WHAT I DO -->
     <section id="services" aria-labelledby="services-title" class="section">
@@ -110,31 +110,29 @@
       </div>
     </section>
 
-    <!-- GALLERY (replaces Highlights) -->
-    <section id="gallery" aria-labelledby="gallery-title" class="section section-alt">
+    <!-- GALLERY -->
+    <section id="gallery" aria-labelledby="gallery-title" class="section section-alt section-gallery">
       <h2 class="stitle" id="gallery-title">Gallery</h2>
 
       <ul class="gallery">
-        <!-- Replace image filenames with yours inside /assets/gallery/ -->
         <li>
-          <a href="assets/gallery/toi.jpg" class="g-item" data-caption="Times of India feature">
-            <img src="TOI.jpg" alt="Times of India feature">
+          <a href="TOI.jpg" class="g-item" data-caption="Times of India feature">
+            <img src="TOI.jpg" alt="Times of India feature" loading="lazy">
             <span class="g-cap">Times of India feature</span>
           </a>
         </li>
         <li>
           <a href="assets/gallery/before.jpg" class="g-item" data-caption="Before — rankings">
-            <img src="assets/gallery/before.jpg" alt="Before — rankings">
+            <img src="assets/gallery/before.jpg" alt="Before — rankings" loading="lazy">
             <span class="g-cap">Before — rankings</span>
           </a>
         </li>
         <li>
           <a href="assets/gallery/after.jpg" class="g-item" data-caption="After — rankings">
-            <img src="assets/gallery/after.jpg" alt="After — rankings">
+            <img src="assets/gallery/after.jpg" alt="After — rankings" loading="lazy">
             <span class="g-cap">After — rankings</span>
           </a>
         </li>
-        <!-- Add more <li>…</li> as needed -->
       </ul>
 
       <!-- Lightbox -->
@@ -147,27 +145,8 @@
       </dialog>
     </section>
 
-    <!-- CASE STUDY 
-    <section id="case" aria-labelledby="case-title" class="section">
-      <h2 class="stitle" id="case-title">Featured case study</h2>
-
-      <article class="case">
-        <ul class="summarychips">
-          <li class="stat">Top-10 in Delhi</li>
-          <li class="stat">3k → 9k/mo (≈4 months)</li>
-        </ul>
-
-        <dl class="case-rows">
-          <div><dt>Problem</dt><dd>New PR brand in Delhi was invisible against older competitors.</dd></div>
-          <div><dt>Strategy</dt><dd>Mapped topical clusters; rewrote UX around intent and local proof.</dd></div>
-          <div><dt>Execution</dt><dd>8 long-form assets, category restructure, internal links, 3 beauty roundups.</dd></div>
-          <div><dt>Results</dt><dd><strong>Organic sessions ~3k → 9k/month in 4 months.</strong> Delhi location broke into top-10.</dd></div>
-        </dl>
-      </article>
-    </section> -->
-
-    <!-- ARTICLES -->
-    <section id="hub" aria-labelledby="hub-title" class="section section-alt">
+    <!-- ARTICLES / WRITINGS -->
+    <section id="hub" aria-labelledby="hub-title" class="section section-alt section-writings">
       <h2 class="stitle" id="hub-title">Writings</h2>
 
       <div class="accordion" role="tablist">
@@ -206,27 +185,23 @@
 
       <div class="card">
         <form class="contact-form" name="contact" method="POST" action="https://formspree.io/f/mblzloap">
-  <input type="hidden" name="_subject" value="New inquiry from website">
-            <div class="field">
-              <label for="name">Name</label>
-              <input id="name" name="name" type="text" autocomplete="name" required />
-            </div>
-            <div class="field">
-              <label for="email">Email</label>
-              <input id="email" name="email" type="email" autocomplete="email" required />
-            </div>
+          <input type="hidden" name="_subject" value="New inquiry from website" />
+          <div class="field">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required />
           </div>
-
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required />
+          </div>
           <div class="field">
             <label for="website">Website</label>
             <input id="website" name="website" type="url" placeholder="https://example.com" required />
           </div>
-
           <div class="field">
             <label for="msg">Biggest challenge (1 line)</label>
             <textarea id="msg" name="message" maxlength="400" placeholder="e.g., Good rankings, poor conversions"></textarea>
           </div>
-
           <button class="btn" type="submit">Send it my way →</button>
         </form>
       </div>
@@ -268,22 +243,7 @@
     document.addEventListener('scroll', onScroll, { passive: true });
     onScroll();
 
-    // Contact demo
-    document.querySelector('.contact-form')?.addEventListener('submit', (e) => {
-      e.preventDefault();
-      const btn = e.target.querySelector('.btn');
-      const original = btn.textContent;
-      btn.textContent = 'Sending…';
-      btn.disabled = true;
-      setTimeout(() => {
-        alert("Thanks! I’ll get back with perspective — not a sales pitch.");
-        btn.textContent = original;
-        btn.disabled = false;
-        e.target.reset();
-      }, 700);
-    });
-
-    // GALLERY lightbox (no deps)
+    // GALLERY lightbox
     const dlg = document.getElementById('lightbox');
     const lbImg = document.getElementById('lb-img');
     const lbCap = document.getElementById('lb-cap');
