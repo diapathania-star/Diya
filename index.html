@@ -1,262 +1,283 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>[[Your Name]] — [[One‑line Hook]]</title>
-  <meta name="description" content="[[1–2 sentence summary about who you are and what you do.]]">
+  <title>Diya Pathania — SEO Consultant & Perception Architect</title>
+  <meta name="description" content="Technical SEO with calm, proof-first execution. Make your brand easy to find and hard to forget." />
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <meta property="og:title" content="[[Your Name]] — [[One‑line Hook]]" />
-  <meta property="og:description" content="[[1–2 sentence summary about who you are and what you do.]]" />
-  <meta property="og:image" content="[[https://your-domain.com/og-image.jpg]]" />
-  <meta property="og:type" content="website" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <link rel="icon" href="[[/favicon.ico]]">
-  <style>
-    :root{ --bg:#F5F2ED; --ink:#3E3E3E; --accent:#2E3B32; --muted:#7E8F7B; --soft:#ECE6DA; --clay:#9D7C66; }
-    html{ scroll-behavior:smooth; }
-    .container-nice{ max-width:1100px; margin:0 auto; }
-  </style>
-  <script>
-    // Lightweight theme toggle (optional)
-    function toggleTheme(){ document.documentElement.classList.toggle('dark'); }
-  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@500;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="D2.css" />
 </head>
-<body class="bg-[var(--bg)] text-[var(--ink)] antialiased">
-  <!-- Top Bar -->
-  <header class="sticky top-0 z-30 backdrop-blur bg-[var(--bg)]/80 border-b border-black/5">
-    <nav class="container-nice px-5 xl:px-0 flex items-center justify-between h-14">
-      <a href="#home" class="font-semibold tracking-tight">[[Your Name]]</a>
-      <div class="hidden sm:flex items-center gap-6 text-sm">
-        <a href="#about" class="hover:text-[var(--accent)]">About</a>
-        <a href="#work" class="hover:text-[var(--accent)]">Work</a>
-        <a href="#services" class="hover:text-[var(--accent)]">Offerings</a>
-        <a href="#testimonials" class="hover:text-[var(--accent)]">Proof</a>
-        <a href="#contact" class="hover:text-[var(--accent)]">Contact</a>
-      </div>
-      <a href="#contact" class="text-sm px-3 py-1.5 rounded-xl bg-[var(--accent)] text-white">Book a chat</a>
-    </nav>
+<body>
+  <!-- Reading progress -->
+  <div class="read-progress" id="readProgress" aria-hidden="true"></div>
+
+  <!-- Header -->
+  <header class="site" id="top">
+    <div class="wrap nav">
+      <a class="brand" href="#top" aria-label="Home">
+        <span class="logo" aria-hidden="true"></span>
+        <span>Diya Pathania</span>
+      </a>
+      <nav aria-label="Primary">
+        <a class="link" href="#services">What I do</a>
+        <a class="link" href="#gallery">Gallery</a>
+        <a class="link" href="#case">Case study</a>
+        <a class="link" href="#hub">Articles</a>
+        <a class="link" href="#contact">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <!-- Hero -->
-  <section id="home" class="container-nice px-5 xl:px-0 pt-12 md:pt-20">
-    <div class="grid md:grid-cols-12 gap-8 items-center">
-      <div class="md:col-span-7">
-        <h1 class="text-4xl md:text-6xl font-extrabold leading-tight tracking-tight">
-          [[Your Name]]
-        </h1>
-        <p class="mt-3 text-lg">[[Role tags: e.g., Perception Architect · SEO Strategist · Speaker]]</p>
-        <p class="mt-5 text-xl max-w-2xl">[[One‑line hook: the value you create, for whom, and why it matters.]]</p>
-        <div class="mt-6 flex flex-wrap gap-3">
-          <a href="#work" class="px-4 py-2 rounded-xl bg-[var(--accent)] text-white">See work</a>
-          <a href="#contact" class="px-4 py-2 rounded-xl border border-black/10">Get in touch</a>
-        </div>
-        <div class="mt-4 text-sm text-black/60">Based in [[City, Country]] · Available for [[consulting/speaking/advisory]]</div>
+  <main class="wrap">
+    <!-- HERO -->
+    <section class="hero hero--split" aria-labelledby="hero-title">
+      <div class="hero-text">
+        <h1 id="hero-title">Make your brand easy to find &
+            <br /> Hard to forget.</h1>
+        <p class="lead">Technical SEO with calm, proof-first execution. Measurable lift and story clarity.</p>
+        <div class="chip">Featured: Times of India</div>
       </div>
-      <div class="md:col-span-5">
-        <img src="[[/headshot.jpg]]" alt="[[Your Name]] headshot" class="w-full max-w-sm mx-auto rounded-2xl shadow"/>
-      </div>
-    </div>
-  </section>
+      <figure class="hero-art" role="img" aria-label="Calm abstract texture in sage/clay"></figure>
+    </section>
 
-  <!-- Social proof strip -->
-  <section class="container-nice px-5 xl:px-0 mt-10">
-    <div class="flex flex-wrap items-center gap-6 text-sm opacity-80">
-      <span>Seen in:</span>
-      <img src="[[/logo1.svg]]" alt="Logo 1" class="h-6"/>
-      <img src="[[/logo2.svg]]" alt="Logo 2" class="h-6"/>
-      <img src="[[/logo3.svg]]" alt="Logo 3" class="h-6"/>
-      <a href="[[https://linkedin.com/in/your-handle]]" class="underline">LinkedIn</a>
-      <a href="[[https://instagram.com/your-handle]]" class="underline">Instagram</a>
-      <a href="[[mailto:you@domain.com]]" class="underline">Email</a>
-    </div>
-  </section>
+    <hr class="divider" />
 
-  <!-- About -->
-  <section id="about" class="container-nice px-5 xl:px-0 mt-16">
-    <div class="grid md:grid-cols-12 gap-8">
-      <div class="md:col-span-7">
-        <h2 class="text-2xl font-bold">About</h2>
-        <p class="mt-4 leading-relaxed">[[Short bio: Who you are, what you believe, and how you work. Keep it ~100–150 words.]]</p>
-        <ul class="mt-6 space-y-2 text-sm">
-          <li>→ Based in: [[City]]</li>
-          <li>→ Expertise: [[e.g., SEO Audits, Perception Architecture, Narrative Strategy]]</li>
-          <li>→ Worked with: [[Industries or 3–5 representative names]]</li>
-        </ul>
-      </div>
-      <div class="md:col-span-5">
-        <div class="p-5 rounded-2xl border border-black/10 bg-white/60">
-          <h3 class="font-semibold">Quick facts</h3>
-          <ul class="mt-3 space-y-2 text-sm">
-            <li>⭐ [[Signature framework name]]</li>
-            <li>🎤 [[Talk topic or flagship workshop]]</li>
-            <li>✍️ [[Newsletter/Blog name]]</li>
+    <!-- WHAT I DO -->
+    <section id="services" aria-labelledby="services-title" class="section">
+      <h2 class="stitle" id="services-title">What I do</h2>
+
+      <div class="cards g3">
+        <article class="card">
+          <h3>SEO & Visibility</h3>
+          <p class="subtitle">Make Google actually find you.</p>
+          <ul class="list">
+            <li>Fix crawlability, speed, structure.</li>
+            <li>Map intent → topical clusters.</li>
+            <li>Prune content that harms authority.</li>
           </ul>
-        </div>
-      </div>
-    </div>
-  </section>
+        </article>
 
-  <!-- Work / Projects -->
-  <section id="work" class="container-nice px-5 xl:px-0 mt-16">
-    <h2 class="text-2xl font-bold">Selected Work</h2>
-    <div class="mt-6 grid md:grid-cols-2 gap-6">
-      <!-- Card -->
-      <article class="p-5 rounded-2xl border border-black/10 bg-white/70">
-        <h3 class="font-semibold">[[Project/Client A]]</h3>
-        <p class="mt-2 text-sm">[[One-line result: e.g., From invisible to inbound leads in 90 days]]</p>
-        <ul class="mt-3 text-sm list-disc pl-5 space-y-1">
-          <li>[[What you did]]</li>
-          <li>[[How you measured it]]</li>
-          <li>[[Outcome/quote]]</li>
+        <article class="card">
+          <h3>Perception Architecture</h3>
+          <p class="subtitle">A story that travels: press, customers, search.</p>
+          <ul class="list">
+            <li>Align narrative across surfaces.</li>
+            <li>Repeatable proof points.</li>
+            <li>Pitch-ready, memory-friendly copy.</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Website & Conversion</h3>
+          <p class="subtitle">From “nice site” to “clear next step.”</p>
+          <ul class="list">
+            <li>Story-led layout, clear CTA ladder.</li>
+            <li>Friction-killing microcopy.</li>
+            <li>Measure: scroll depth, clicks, starts.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- GALLERY (replaces Highlights) -->
+    <section id="gallery" aria-labelledby="gallery-title" class="section section-alt">
+      <h2 class="stitle" id="gallery-title">Gallery</h2>
+
+      <ul class="gallery">
+        <!-- Replace image filenames with yours inside /assets/gallery/ -->
+        <li>
+          <a href="assets/gallery/toi.jpg" class="g-item" data-caption="Times of India feature">
+            <img src="TOI.jpg" alt="Times of India feature">
+            <span class="g-cap">Times of India feature</span>
+          </a>
+        </li>
+        <li>
+          <a href="assets/gallery/before.jpg" class="g-item" data-caption="Before — rankings">
+            <img src="assets/gallery/before.jpg" alt="Before — rankings">
+            <span class="g-cap">Before — rankings</span>
+          </a>
+        </li>
+        <li>
+          <a href="assets/gallery/after.jpg" class="g-item" data-caption="After — rankings">
+            <img src="assets/gallery/after.jpg" alt="After — rankings">
+            <span class="g-cap">After — rankings</span>
+          </a>
+        </li>
+        <!-- Add more <li>…</li> as needed -->
+      </ul>
+
+      <!-- Lightbox -->
+      <dialog id="lightbox">
+        <figure>
+          <img id="lb-img" alt="">
+          <figcaption id="lb-cap"></figcaption>
+        </figure>
+        <button id="lb-close" aria-label="Close">×</button>
+      </dialog>
+    </section>
+
+    <!-- CASE STUDY -->
+    <section id="case" aria-labelledby="case-title" class="section">
+      <h2 class="stitle" id="case-title">Featured case study</h2>
+
+      <article class="case">
+        <ul class="summarychips">
+          <li class="stat">Top-10 in Delhi</li>
+          <li class="stat">3k → 9k/mo (≈4 months)</li>
         </ul>
-        <a href="[[/case-a.pdf]]" class="inline-block mt-3 text-[var(--accent)] underline">Read case →</a>
+
+        <dl class="case-rows">
+          <div><dt>Problem</dt><dd>New PR brand in Delhi was invisible against older competitors.</dd></div>
+          <div><dt>Strategy</dt><dd>Mapped topical clusters; rewrote UX around intent and local proof.</dd></div>
+          <div><dt>Execution</dt><dd>8 long-form assets, category restructure, internal links, 3 beauty roundups.</dd></div>
+          <div><dt>Results</dt><dd><strong>Organic sessions ~3k → 9k/month in 4 months.</strong> Delhi location broke into top-10.</dd></div>
+        </dl>
       </article>
-      <article class="p-5 rounded-2xl border border-black/10 bg-white/70">
-        <h3 class="font-semibold">[[Project/Client B]]</h3>
-        <p class="mt-2 text-sm">[[One-line result]]</p>
-        <ul class="mt-3 text-sm list-disc pl-5 space-y-1">
-          <li>[[What you did]]</li>
-          <li>[[How you measured it]]</li>
-          <li>[[Outcome/quote]]</li>
-        </ul>
-        <a href="[[/case-b.pdf]]" class="inline-block mt-3 text-[var(--accent)] underline">Read case →</a>
-      </article>
-    </div>
-  </section>
+    </section>
 
-  <!-- Services -->
-  <section id="services" class="container-nice px-5 xl:px-0 mt-16">
-    <h2 class="text-2xl font-bold">Offerings</h2>
-    <div class="mt-6 grid md:grid-cols-3 gap-6">
-      <div class="p-5 rounded-2xl border border-black/10 bg-white/70">
-        <h3 class="font-semibold">[[Service 1]]</h3>
-        <p class="mt-2 text-sm">[[Who it’s for + outcome in one line.]]</p>
-        <p class="mt-3 text-sm">Includes: [[3–5 bullets of inclusions]]</p>
-        <a href="#contact" class="inline-block mt-3 text-[var(--accent)] underline">Enquire →</a>
+    <!-- ARTICLES -->
+    <section id="hub" aria-labelledby="hub-title" class="section section-alt">
+      <h2 class="stitle" id="hub-title">Articles & playbooks</h2>
+
+      <div class="accordion" role="tablist">
+        <article class="acc" aria-expanded="false">
+          <button aria-controls="p1" aria-expanded="false">
+            <span>Technical SEO for Narrative Brands</span><span>▼</span>
+          </button>
+          <div class="panel" id="p1">
+            <p>From crawlability to schema: a practical sequence you can run on any site.</p>
+          </div>
+        </article>
+
+        <article class="acc" aria-expanded="false">
+          <button aria-controls="p2" aria-expanded="false">
+            <span>Perception Architecture Case Playbook (detailed framework)</span><span>▼</span>
+          </button>
+          <div class="panel" id="p2">
+            <p>Design once, align across journalists, customers, and search.</p>
+          </div>
+        </article>
+
+        <article class="acc" aria-expanded="false">
+          <button aria-controls="p3" aria-expanded="false">
+            <span>How a Girl from Faridabad is Changing Narratives — Choosing What You Do in the Age of AI</span><span>▼</span>
+          </button>
+          <div class="panel" id="p3">
+            <p>Layout, microcopy, and CTA ladders that reduce friction and increase clarity.</p>
+          </div>
+        </article>
       </div>
-      <div class="p-5 rounded-2xl border border-black/10 bg-white/70">
-        <h3 class="font-semibold">[[Service 2]]</h3>
-        <p class="mt-2 text-sm">[[One-line benefit.]]</p>
-        <p class="mt-3 text-sm">Includes: [[3–5 bullets]]</p>
-        <a href="#contact" class="inline-block mt-3 text-[var(--accent)] underline">Enquire →</a>
-      </div>
-      <div class="p-5 rounded-2xl border border-black/10 bg-white/70">
-        <h3 class="font-semibold">[[Service 3]]</h3>
-        <p class="mt-2 text-sm">[[One-line benefit.]]</p>
-        <p class="mt-3 text-sm">Includes: [[3–5 bullets]]</p>
-        <a href="#contact" class="inline-block mt-3 text-[var(--accent)] underline">Enquire →</a>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Testimonials -->
-  <section id="testimonials" class="container-nice px-5 xl:px-0 mt-16">
-    <h2 class="text-2xl font-bold">Proof</h2>
-    <div class="mt-6 grid md:grid-cols-3 gap-6">
-      <figure class="p-5 rounded-2xl border border-black/10 bg-white/70">
-        <blockquote class="text-sm">“[[Short client quote.]]”</blockquote>
-        <figcaption class="mt-3 text-xs opacity-80">— [[Name, Title, Company]]</figcaption>
-      </figure>
-      <figure class="p-5 rounded-2xl border border-black/10 bg-white/70">
-        <blockquote class="text-sm">“[[Short client quote.]]”</blockquote>
-        <figcaption class="mt-3 text-xs opacity-80">— [[Name, Title, Company]]</figcaption>
-      </figure>
-      <figure class="p-5 rounded-2xl border border-black/10 bg-white/70">
-        <blockquote class="text-sm">“[[Short client quote.]]”</blockquote>
-        <figcaption class="mt-3 text-xs opacity-80">— [[Name, Title, Company]]</figcaption>
-      </figure>
-    </div>
-  </section>
+    <!-- CONTACT -->
+    <section id="contact" aria-labelledby="contact-title" class="section">
+      <h2 class="stitle" id="contact-title">Want me to take a look at your site?</h2>
 
-  <!-- Writing -->
-  <section id="writing" class="container-nice px-5 xl:px-0 mt-16">
-    <h2 class="text-2xl font-bold">Writing</h2>
-    <div class="mt-6 grid md:grid-cols-2 gap-6 text-sm">
-      <a class="p-5 rounded-2xl border border-black/10 bg-white/70 block hover:shadow" href="[[/essay-1]]">[[Essay title 1]] →</a>
-      <a class="p-5 rounded-2xl border border-black/10 bg-white/70 block hover:shadow" href="[[/essay-2]]">[[Essay title 2]] →</a>
-    </div>
-  </section>
+      <div class="card">
+        <form class="contact-form" name="contact" method="POST" action="https://formspree.io/f/mblzloap">
+  <input type="hidden" name="_subject" value="New inquiry from website">
+            <div class="field">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" autocomplete="name" required />
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" autocomplete="email" required />
+            </div>
+          </div>
 
-  <!-- Contact -->
-  <section id="contact" class="container-nice px-5 xl:px-0 mt-16 mb-20">
-    <div class="grid md:grid-cols-12 gap-8 items-start">
-      <div class="md:col-span-6">
-        <h2 class="text-2xl font-bold">Let’s talk</h2>
-        <p class="mt-3 text-sm">Prefer email? <a class="underline" href="mailto:[[you@domain.com]]">[[you@domain.com]]</a> · Or book a slot: <a class="underline" href="[[https://cal.com/your-handle]]">[[cal link]]</a></p>
-        <form id="contactForm" class="mt-6 space-y-3 p-5 rounded-2xl border border-black/10 bg-white/70">
-          <input required class="w-full px-3 py-2 rounded-lg border border-black/10" name="name" placeholder="Your name"/>
-          <input required type="email" class="w-full px-3 py-2 rounded-lg border border-black/10" name="email" placeholder="Email"/>
-          <input class="w-full px-3 py-2 rounded-lg border border-black/10" name="company" placeholder="Company (optional)"/>
-          <textarea required class="w-full px-3 py-2 rounded-lg border border-black/10" name="message" rows="4" placeholder="What do you need help with?"></textarea>
-          <button class="px-4 py-2 rounded-xl bg-[var(--accent)] text-white" type="submit">Send</button>
-          <p id="formMsg" class="text-sm opacity-80"></p>
+          <div class="field">
+            <label for="website">Website</label>
+            <input id="website" name="website" type="url" placeholder="https://example.com" required />
+          </div>
+
+          <div class="field">
+            <label for="msg">Biggest challenge (1 line)</label>
+            <textarea id="msg" name="message" maxlength="400" placeholder="e.g., Good rankings, poor conversions"></textarea>
+          </div>
+
+          <button class="btn" type="submit">Send it my way →</button>
         </form>
       </div>
-      <div class="md:col-span-6">
-        <div class="p-5 rounded-2xl border border-black/10 bg-white/70">
-          <h3 class="font-semibold">Elsewhere</h3>
-          <ul class="mt-3 space-y-2 text-sm">
-            <li><a class="underline" href="[[https://linkedin.com/in/your-handle]]">LinkedIn</a></li>
-            <li><a class="underline" href="[[https://instagram.com/your-handle]]">Instagram</a></li>
-            <li><a class="underline" href="[[https://x.com/your-handle]]">Twitter</a></li>
-            <li><a class="underline" href="[[/resume.pdf]]">Resume</a></li>
-          </ul>
-        </div>
+    </section>
+  </main>
+
+  <!-- Footer (simple) -->
+  <footer class="foot">
+    <div class="wrap footgrid--simple">
+      <div>
+        <strong>Diya Pathania</strong><br />
+        SEO Consultant &amp; Perception Architect — India
+      </div>
+      <div class="foot-right">
+        <a class="link" href="mailto:diapathania@gmail.com">diapathania@gmail.com</a>
+        <div class="note">You reached the end. The algorithms would be proud.</div>
       </div>
     </div>
-  </section>
-
-  <footer class="container-nice px-5 xl:px-0 pb-12 text-xs opacity-70">
-    © <span id="y"></span> [[Your Name]]. Built with ♥.
   </footer>
 
   <script>
-    // Year
-    document.getElementById('y').textContent = new Date().getFullYear();
-
-    // Contact form: quick Formspree fallback (replace with your endpoint)
-    document.getElementById('contactForm').addEventListener('submit', async function(e){
-      e.preventDefault();
-      const form = e.target;
-      const data = Object.fromEntries(new FormData(form));
-
-      // OPTION A: Formspree (replace with your ID)
-      const FORMSPREE_URL = 'https://formspree.io/f/[[your-id]]';
-
-      // OPTION B: mailto fallback
-      const mailto = `mailto:[[you@domain.com]]?subject=Website%20enquiry%20from%20${encodeURIComponent(data.name)}&body=${encodeURIComponent(data.message)}%0A%0AEmail:%20${encodeURIComponent(data.email)}%0ACompany:%20${encodeURIComponent(data.company||'')}`;
-
-      try{
-        if(FORMSPREE_URL.includes('[[your-id]]')){
-          window.location.href = mailto; // uses email client if Formspree not configured
-        }else{
-          const res = await fetch(FORMSPREE_URL,{ method:'POST', headers:{'Accept':'application/json'}, body:new FormData(form)});
-          if(res.ok){ document.getElementById('formMsg').textContent = 'Thanks! I will reply soon.'; form.reset(); }
-          else{ window.location.href = mailto; }
-        }
-      }catch(err){ window.location.href = mailto; }
+    // Accordions
+    document.querySelectorAll('.acc button').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const acc = btn.closest('.acc');
+        const expanded = acc.getAttribute('aria-expanded') === 'true';
+        acc.setAttribute('aria-expanded', String(!expanded));
+        btn.setAttribute('aria-expanded', String(!expanded));
+      });
     });
-  </script>
 
-  <!-- Schema.org (edit placeholders) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "[[Your Name]]",
-    "jobTitle": "[[Role]]",
-    "url": "[[https://your-domain.com]]",
-    "image": "[[https://your-domain.com/headshot.jpg]]",
-    "sameAs": [
-      "[[https://www.linkedin.com/in/your-handle]]",
-      "[[https://instagram.com/your-handle]]",
-      "[[https://x.com/your-handle]]"
-    ]
-  }
+    // Read progress bar
+    const progress = document.getElementById('readProgress');
+    const onScroll = () => {
+      const h = document.documentElement;
+      const scrolled = h.scrollTop / (h.scrollHeight - h.clientHeight);
+      progress.style.width = (scrolled * 100).toFixed(2) + '%';
+    };
+    document.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+
+    // Contact demo
+    document.querySelector('.contact-form')?.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const btn = e.target.querySelector('.btn');
+      const original = btn.textContent;
+      btn.textContent = 'Sending…';
+      btn.disabled = true;
+      setTimeout(() => {
+        alert("Thanks! I’ll get back with perspective — not a sales pitch.");
+        btn.textContent = original;
+        btn.disabled = false;
+        e.target.reset();
+      }, 700);
+    });
+
+    // GALLERY lightbox (no deps)
+    const dlg = document.getElementById('lightbox');
+    const lbImg = document.getElementById('lb-img');
+    const lbCap = document.getElementById('lb-cap');
+    const lbClose = document.getElementById('lb-close');
+
+    document.querySelectorAll('.g-item').forEach(a=>{
+      a.addEventListener('click', e=>{
+        e.preventDefault();
+        lbImg.src = a.getAttribute('href');
+        lbImg.alt = a.querySelector('img')?.alt || '';
+        lbCap.textContent = a.dataset.caption || '';
+        dlg.showModal();
+      });
+    });
+    lbClose.addEventListener('click', ()=> dlg.close());
+    dlg.addEventListener('click', e=>{
+      const rect = dlg.getBoundingClientRect();
+      if(!(e.clientX>rect.left && e.clientX<rect.right && e.clientY>rect.top && e.clientY<rect.bottom)){
+        dlg.close();
+      }
+    });
   </script>
 </body>
 </html>
