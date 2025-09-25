@@ -1,7 +1,7 @@
 :root{
   /* Calm TPS palette (you can swap sand/paper later) */
   --sand:#ecdae7;
-  --paper:#d9e6e2;
+  --paper:#ebf7f3;
   --sage:#7E8F7B;
   --charcoal:#2F2F2F;
   --forest:#2E3B32;
@@ -41,6 +41,7 @@ body{
 
 /* Reading progress */
 .read-progress{position:fixed; left:0; top:0; height:2px; width:0%; background:var(--forest); z-index:999; opacity:.6}
+@media (prefers-reduced-motion:reduce){ .read-progress{display:none} }
 
 /* Typography */
 .stitle{
@@ -81,8 +82,26 @@ body{
 
 /* Sections */
 .section{margin:28px 0}
+.section + .section{margin-top:36px}
 .section-alt{background:linear-gradient(#fff,var(--paper)); padding:14px; border-radius:16px; border:1px solid #EAE8E2}
 .divider{border:0; height:1px; background:#EAE8E2; margin:8px 0 16px}
+
+/* GALLERY section styling stays as-is */
+.section-gallery.section-alt{
+  background:linear-gradient(#fff, var(--paper));
+  border:1px solid #EAE8E2; /* light frame */
+  box-shadow:var(--shadow-s);
+}
+
+/* WRITINGS section: distinct tint + remove that top line */
+.section-writings.section-alt{
+  /* no border so no thin line appears */
+  border:0;
+  /* soft mint-sand mix so it differs from gallery */
+  background:linear-gradient(#ffffff, color-mix(in srgb, var(--sand) 35%, var(--paper) 65%));
+  box-shadow:var(--shadow-m);
+  padding:18px;
+}
 
 /* WHAT I DO */
 .cards{display:grid; gap:14px}
@@ -104,7 +123,7 @@ body{
 .list{margin:.35rem 0 0; padding-left:1.15rem; list-style:disc; list-style-position:outside}
 .list li{margin:6px 0; padding-left:.1rem; line-height:1.55}
 
-/* GALLERY */
+/* GALLERY grid */
 .gallery{
   list-style:none; padding:0; margin:0;
   display:grid; gap:12px;
@@ -129,18 +148,11 @@ body{
 }
 
 /* Lightbox dialog */
-#lightbox{
-  border:0; padding:0; background:transparent; max-width:min(92vw,1080px);
-}
+#lightbox{ border:0; padding:0; background:transparent; max-width:min(92vw,1080px); }
 #lightbox::backdrop{ background:rgba(0,0,0,.5); }
 #lightbox figure{ margin:0; position:relative; }
-#lb-img{
-  width:100%; height:auto; display:block; border-radius:12px;
-  background:#000; object-fit:contain;
-}
-#lb-cap{
-  margin-top:6px; text-align:center; font-size:13px; color:#fff; opacity:.85;
-}
+#lb-img{ width:100%; height:auto; display:block; border-radius:12px; background:#000; object-fit:contain; }
+#lb-cap{ margin-top:6px; text-align:center; font-size:13px; color:#fff; opacity:.85; }
 #lb-close{
   position:absolute; top:-14px; right:-14px;
   width:32px; height:32px; border:0; border-radius:50%;
@@ -159,7 +171,7 @@ body{
 @media (max-width:640px){ .case-rows > div{ grid-template-columns:1fr; } }
 
 /* Accordion */
-.accordion{border-radius:var(--radius); overflow:hidden; border:1px solid #EAE8E2; box-shadow:var(--shadow-s)}
+.accordion{border-radius:var(--radius); overflow:hidden; border:1px solid #EAE8E2; box-shadow:var(--shadow-s); background:#fff}
 .acc{background:#fff}
 .acc + .acc{border-top:1px solid #EAE8E2}
 .acc button{width:100%; text-align:left; display:flex; justify-content:space-between; align-items:center; gap:12px; padding:12px 14px; font-weight:600; color:var(--forest); background:none; border:0; cursor:pointer}
@@ -189,5 +201,48 @@ textarea{min-height:110px; resize:vertical}
   .foot-right{text-align:left}
 }
 
-/* Reduced motion */
-@media (prefers-reduced-motion:reduce){ *{transition:none !important; animation:none !important} }
+/* Focus styles for a11y */
+a.link:focus-visible, .btn:focus-visible, .acc button:focus-visible {
+  outline:2px solid var(--forest); outline-offset:2px;
+}
+
+/* ABOUT */
+.about { margin-top: 10px; } /* keeps it tight after hero divider */
+.about-grid{
+  display:grid; gap:clamp(14px,3.5vw,28px);
+  grid-template-columns:minmax(0,420px) 1fr;
+  align-items:center;
+}
+@media (max-width:960px){ .about-grid{ grid-template-columns:1fr; } }
+
+.about-photo{
+  aspect-ratio:4/5;
+  border-radius:var(--radius-lg);
+  border:1px solid #EAE8E2;
+  box-shadow:var(--shadow-m);
+  background:
+    radial-gradient(60% 60% at 18% 20%, color-mix(in srgb,var(--sage) 18%, transparent), transparent 70%),
+    radial-gradient(65% 65% at 82% 85%, color-mix(in srgb,var(--clay) 18%, transparent), transparent 72%),
+    linear-gradient(160deg,#fff,var(--paper));
+}
+
+.about-copy{ display:grid; gap:12px; }
+.about-lead{
+  font-size:clamp(16px,2.1vw,19px);
+  margin:0;
+  max-width:60ch;
+}
+.about-points{ margin:0; padding-left:1.1rem; list-style:disc; }
+.about-points li{ margin:6px 0; }
+.about-meta{ display:flex; gap:8px; flex-wrap:wrap; margin-top:4px; }
+
+@media (prefers-reduced-motion:no-preference){
+  .about-photo{ transform:translateZ(0); }
+}
+
+.logo-img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;   /* keeps it circular */
+  object-fit: cover;    /* makes sure it crops nicely */
+}
