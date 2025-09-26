@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Technical SEO for Narrative Brands — Diya Pathania</title>
+  <meta name="description" content="Technical SEO is memory architecture: making your story crawlable, renderable, and linkable at scale—without dumbing it down." />
+
+  <!-- Share cards -->
+  <meta property="og:title" content="Technical SEO for Narrative Brands — Diya Pathania" />
+  <meta property="og:description" content="Technical SEO is memory architecture: making your story crawlable, renderable, and linkable at scale—without dumbing it down." />
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="../assets/blog/cover.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Fonts & CSS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@500;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="article1.css" />
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://yourdomain.com/posts/technical-seo-narrative.html" />
+</head>
+<body>
+  <!-- Reading progress bar -->
+  <div class="read-progress" id="readProgress"></div>
+
+  <!-- Header -->
+  <header class="site">
+    <div class="wrap nav">
+      <a class="brand" href="../index.html" aria-label="Home">
+        <img src="logo../Posts.jpeg" alt="Diya Pathania logo" class="logo-img" />
+        <span>Diya Pathania</span>
+      </a>
+      <nav aria-label="Primary">
+        <a class="link" href="../index.html#services">What I do</a>
+        <a class="link" href="../index.html#gallery">Gallery</a>
+        <a class="link" href="../articles.html">Articles</a>
+        <a class="link" href="../index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <article class="post">
+      <header class="post-head">
+        <p class="post-kicker chip">SEO • Playbook</p>
+        <h1 class="post-title">Technical SEO for Narrative Brands</h1>
+
+        <div class="post-meta">
+          <img src="../assets/avatar.jpg" alt="Diya Pathania" class="post-author" />
+          <span>By Diya Pathania</span>
+          <span aria-hidden="true">·</span>
+          <time datetime="2025-09-26">26 Sep 2025</time>
+          <span aria-hidden="true">·</span>
+          <span id="readtime">—</span>
+        </div>
+
+        <figure class="post-cover">
+          <img src="Technical.jpg" alt="Illustration of narrative SEO architecture" />
+          <figcaption>Technical SEO as memory architecture.</figcaption>
+        </figure>
+      </header>
+
+      <!-- ToC -->
+      <aside class="toc collapsed" aria-label="Table of contents" id="toc">
+  <strong>On this page</strong>
+  <ol id="tocList"></ol>
+  <button id="toggleToc" type="button" aria-expanded="false" aria-controls="tocList">
+    Show all
+  </button>
+</aside>
+
+
+      <div class="post-content prose" id="content">
+        <p>Most SEO advice treats your site like a vending machine: insert keywords, dispense traffic. Narrative brands don’t work that way. You’re not trying to win a single query; you’re trying to install a story in people’s heads and make it retrievable on demand. Technical SEO, then, is not page-speed cosmetology. It’s memory architecture. It’s the system that makes your story crawlable, renderable, and linkable at scale—without dumbing it down.</p>
+
+        <p>Below is a practitioner’s lens: the boring plumbing that quietly decides whether your narrative becomes a brand asset or a forgotten Medium post.</p>
+
+        <h2 id="architecture-is-narrative-not-furniture">1) Architecture is narrative, not furniture</h2>
+        <p>If your site map looks like a warehouse of pages, you’ve already lost. Bots don’t “discover your brand”; they traverse a graph. Build that graph like a book.</p>
+
+        <div class="illustration">
+          <img src="../assets/blog/hub-spoke.png" alt="Hub and spoke architecture diagram" />
+          <figcaption>Hubs as chapters, spokes as scenes. Predictable routes = predictable meaning.</figcaption>
+        </div>
+
+        <ul>
+          <li><strong>Hubs are chapters.</strong> Each hub targets a problem statement and an entity (topic + audience + outcome). Hubs must be indexable, internally popular (linked from top nav and footer), and semantically rich (definitions, FAQs, relationships, examples).</li>
+          <li><strong>Spokes are scenes.</strong> Each spoke solves one sub-problem and links back to the hub with deliberate anchor text that matches the hub’s promise.</li>
+          <li><strong>Rules that scale:</strong> every hub links to 5–12 spokes; every spoke links to the hub and at least two siblings. No orphan content.</li>
+          <li><strong>URL design:</strong> <code>/{hub}/{spoke}/</code> beats dumping everything at root. Predictability is an underrated ranking factor.</li>
+        </ul>
+
+        <aside class="callout">
+          <p><strong>Rule of thumb:</strong> Hubs → 5–12 spokes. Spokes → hub + ≥2 siblings. Zero orphans.</p>
+        </aside>
+
+        <h2 id="crawl-index-attention">2) Crawl budget ≠ index budget ≠ attention budget</h2>
+        <p>Everyone quotes “crawl budget” and then ships 2,000 thin pages generated from a spreadsheet. Congratulations—you’ve built a crawling treadmill.</p>
+
+        <div class="grid-3">
+          <div><h4>Crawl budget</h4><p>How much of your site Google will attempt to fetch.</p></div>
+          <div><h4>Index budget</h4><p>What Google is willing to keep.</p></div>
+          <div><h4>Attention budget</h4><p>How much users will tolerate before bouncing.</p></div>
+        </div>
+
+        <div class="checklist">
+          <ul>
+            <li>Consolidate near-duplicates; one stronger canonical beats five weak posts.</li>
+            <li><code>noindex</code> tag pages, vanity archives, thin faceted URLs.</li>
+            <li>Use <code>robots.txt</code> as a scalpel: block patterns, not whole directories.</li>
+            <li>Audit server logs monthly: fix templates/canonicals the bots over-crawl.</li>
+          </ul>
+        </div>
+
+        <h2 id="performance-as-pacing">3) Performance as pacing: speed that serves meaning</h2>
+        <p>Page speed is not a religion; it’s pacing. The question is: does the page reveal meaning before the user loses patience?</p>
+        <ul>
+          <li>LCP &lt; ~2s on mobile for primary templates.</li>
+          <li>INP should feel instant for CTAs/menus; CLS near-zero on content pages.</li>
+          <li><strong>Do:</strong> ship WebP with intrinsic sizes, lazy-load below-the-fold, defer non-critical JS, SSR/SSG narrative pages and hydrate toys later.</li>
+        </ul>
+
+        <h2 id="javascript-seo">4) JavaScript SEO without the superstition</h2>
+        <p>No, you don’t need to abandon your framework. You need to respect how rendering works.</p>
+        <ul>
+          <li>SSR/SSG for hubs, case studies, and long-form.</li>
+          <li>ISR for catalogs that change daily.</li>
+          <li>Client-only for dashboards/gated utilities, not lighthouse content.</li>
+          <li>Pre-render titles/meta/schema/primary copy; don’t hide headlines post-hydration.</li>
+        </ul>
+        <blockquote class="highlight">
+          Think of rendering like subtitles: if they don’t ship with the film, most people will miss the plot.
+        </blockquote>
+
+        <h2 id="structured-data-as-proof">5) Structured data as proof, not decoration</h2>
+        <p>Schema is how you whisper to machines, “this isn’t just a paragraph; it’s a claim with edges.” Bind your narrative to known entities.</p>
+        <ul>
+          <li>Person/Organization with <code>sameAs</code> to verified profiles.</li>
+          <li>Service, Article/BlogPosting, BreadcrumbList, FAQPage (only when genuine Q&amp;A).</li>
+        </ul>
+
+        <div class="codebox">
+<pre><code>&lt;script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Diya [Surname]",
+  "jobTitle": "SEO Consultant &amp; Perception Architect",
+  "url": "https://diyadomain.com",
+  "sameAs": [
+    "https://www.linkedin.com/in/diya-...",
+    "https://twitter.com/diya...",
+    "https://github.com/diya..."
+  ],
+  "worksFor": { "@type": "Organization", "name": "The Perception Studio" }
+}
+&lt;/script></code></pre>
+        </div>
+
+        <aside class="callout soft">
+          <p><strong>Don’t fake proofs:</strong> publications, awards, or clients. Schema is a chain of custody for credibility; bad signals travel faster.</p>
+        </aside>
+
+        <h2 id="internal-linking-as-memory">6) Internal linking as memory retrieval</h2>
+        <ul>
+          <li>Editorial anchors in paragraphs (&ldquo;SEO migration checklist&rdquo;), not “click here”.</li>
+          <li>Hubs receive 20+ editorial links; spokes 5–8.</li>
+          <li>Intro &amp; conclusion links carry more weight than footer dumps.</li>
+        </ul>
+
+        <h2 id="facets-parameters-hellscape">7) Faceted navigation, parameters, and the hellscape</h2>
+        <ul>
+          <li>One canonical per intent; index only facets with real demand (e.g., <code>/shoes/black/</code>).</li>
+          <li>Parameter settings ≠ license for infinite junk.</li>
+          <li>Strong category canonicals; don’t canonical page 2→1 if inventory changes.</li>
+        </ul>
+
+        <h2 id="entity-consistency">8) Entity consistency beats keyword density</h2>
+        <ul>
+          <li>Keep name, role, geo, services consistent across site + LinkedIn + GitHub + directories + press.</li>
+          <li>Use <code>sameAs</code>; consistent author entities on every long-form.</li>
+          <li>Make “About” explicit: mentors, collaborators, verticals, tools.</li>
+        </ul>
+
+        <h2 id="decay-and-consolidation">9) Content decay and consolidation: pruning as positioning</h2>
+        <ul>
+          <li>Update when intent is stable but examples are dated.</li>
+          <li>Consolidate competing posts; 301 weak → strong; rewrite survivor to be definitive.</li>
+          <li>Sunset misaligned pages.</li>
+        </ul>
+
+        <h2 id="evidence-first-case-studies">10) Evidence-first case studies (the page Google actually wants)</h2>
+        <div class="grid-2">
+          <div>
+            <h4>Template that works</h4>
+            <ul>
+              <li><strong>Problem:</strong> what failed + why it mattered commercially.</li>
+              <li><strong>Strategy:</strong> cluster/migration/consolidation/programmatic cleanup.</li>
+              <li><strong>Execution:</strong> logs, sitemaps, rendering fix, link reclamation, schema.</li>
+              <li><strong>Results:</strong> traffic/rank/conversions with screenshots.</li>
+              <li><strong>Coda:</strong> 1–2 lessons that generalize.</li>
+            </ul>
+          </div>
+          <div class="card note">
+            <p>A narrative brand’s authority is cumulative. Your case studies are the receipts.</p>
+          </div>
+        </div>
+
+        <h2 id="international-semantics">11) International and multi-audience semantics</h2>
+        <ul>
+          <li>Hreflang per locale; localize slugs when behavior differs.</li>
+          <li>Canonical + regional to prevent /in/ vs /us/ cannibalization.</li>
+          <li>Decide brand vs generic clusters; reflect it in hub design.</li>
+        </ul>
+
+        <h2 id="governance">12) Governance: guardrails that outlive a redesign</h2>
+        <div class="checklist">
+          <ul>
+            <li>Pre-launch: parity crawl, redirect map, staging noindex, analytics/consent, schema preserved, feeds redirected.</li>
+            <li>Templates &gt; pages: locked fields (title length, summary, CTA position).</li>
+            <li>Approval bar: unique H1/meta, schema, internal in/out, point of view.</li>
+          </ul>
+        </div>
+
+        <h2 id="distribution">13) Distribution is a technical concern</h2>
+        <ul>
+          <li>Ship one signature, contrarian, data-backed piece per month.</li>
+          <li>Syndicate: LinkedIn (canonical), X thread, 3–5 niche publications.</li>
+          <li>Reclaim unlinked mentions. Boring, effective.</li>
+        </ul>
+
+        <h2 id="truth-taste">14) The uncomfortable truth: “technical” is in service of taste</h2>
+        <blockquote class="highlight">
+          You can pass every Core Web Vitals threshold and still be forgettable. Technical SEO is leverage on taste and proof.
+        </blockquote>
+        <p>A narrative brand wins when the first 100 words of a hub make a specific promise, and everything technical makes that promise easy to find, store, and retrieve.</p>
+
+        <h2 id="checklist">Single-page checklist (no fluff)</h2>
+        <div class="checklist tight">
+          <ul>
+            <li>Hubs/spokes implemented; zero orphans; semantic breadcrumbs.</li>
+            <li>SSR/SSG narrative pages; hydrate non-critical JS later.</li>
+            <li>LCP &lt; ~2s; INP instant where it matters; CLS ~0.</li>
+            <li>Person/Org/Service/Article schema + sameAs + consistent author entity.</li>
+            <li>Canonicals sane; pagination/parameters tamed; sitemaps by type.</li>
+            <li>3 case studies with screenshots.</li>
+            <li>Editorial internal links (quotas met).</li>
+            <li>Quarterly consolidation + log review.</li>
+            <li>Monthly contrarian, data-backed piece + targeted distribution.</li>
+          </ul>
+        </div>
+
+        <hr class="section-divider" />
+
+        <p><em>If you want me to review your site’s SEO &amp; perception, <a href="../index.html#contact">say hi here</a>.</em></p>
+      </div>
+
+      <footer class="post-foot">
+        <div class="post-tags">
+          <a href="../articles.html" class="chip">SEO</a>
+          <a href="../articles.html" class="chip">Perception Architecture</a>
+          <a href="../articles.html" class="chip">Narrative Strategy</a>
+        </div>
+
+        <nav class="post-nav" aria-label="Post navigation">
+          <a class="prev" href="perception-architecture-playbook.html">← Perception Architecture Playbook</a>
+        </nav>
+      </footer>
+    </article>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap footgrid--simple">
+      <div><strong>Diya Pathania</strong><br /> SEO Consultant &amp; Perception Architect — India</div>
+      <div class="foot-right">
+        <a class="link" href="mailto:diapathania@gmail.com">diapathania@gmail.com</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Read time, ToC, and progress -->
+  <script>
+    (function () {
+      const content = document.getElementById('content');
+      const words = (content.textContent || "").trim().split(/\s+/).filter(Boolean).length;
+      const mins = Math.max(1, Math.round(words / 220));
+      const rt = document.getElementById('readtime'); if (rt) rt.textContent = mins + ' min read';
+
+      const tocList = document.getElementById('tocList');
+      const heads = content.querySelectorAll('h2');
+      heads.forEach((h, i) => {
+        if (!h.id) {
+          h.id = h.textContent.toLowerCase().trim().replace(/[^\w\s-]/g, "").replace(/\s+/g, "-").slice(0, 60) || `sec-${i+1}`;
+        }
+        const li = document.createElement('li');
+        const a = document.createElement('a');
+        a.href = `#${h.id}`;
+        a.textContent = h.textContent.replace(/^\d+\)\s*/, "");
+        li.appendChild(a);
+        tocList.appendChild(li);
+      });
+
+      const progress = document.getElementById('readProgress');
+      const calc = () => {
+        const h = document.querySelector('.post').getBoundingClientRect();
+        const total = h.height - window.innerHeight;
+        const scrolled = Math.max(0, Math.min(total, window.scrollY - (h.top + window.scrollY)));
+        const pct = total > 0 ? (scrolled / total) * 100 : 0;
+        progress.style.width = pct + '%';
+      };
+      window.addEventListener('scroll', calc, { passive: true });
+      window.addEventListener('resize', calc);
+      calc();
+    })();
+  </script>
+</body>
+</html>
