@@ -7,31 +7,22 @@
   <title>Technical SEO for Narrative Brands — Diya Pathania</title>
   <meta name="description" content="Technical SEO is memory architecture: making your story crawlable, renderable, and linkable at scale—without dumbing it down." />
 
-  <!-- Share cards -->
-  <meta property="og:title" content="Technical SEO for Narrative Brands — Diya Pathania" />
-  <meta property="og:description" content="Technical SEO is memory architecture: making your story crawlable, renderable, and linkable at scale—without dumbing it down." />
-  <meta property="og:type" content="article" />
-  <meta property="og:image" content="../assets/blog/cover.jpg" />
-  <meta name="twitter:card" content="summary_large_image" />
-
-  <!-- Fonts & CSS -->
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@500;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="article1.css" />
 
-  <!-- Canonical -->
-  <link rel="canonical" href="https://yourdomain.com/posts/technical-seo-narrative.html" />
+  <link rel="stylesheet" href="article1.css" />
 </head>
 <body>
-  <!-- Reading progress bar -->
+  <!-- Reading progress -->
   <div class="read-progress" id="readProgress"></div>
 
   <!-- Header -->
   <header class="site">
     <div class="wrap nav">
       <a class="brand" href="../index.html" aria-label="Home">
-        <img src="logo../Posts.jpeg" alt="Diya Pathania logo" class="logo-img" />
+        <img src="../logo.jpeg" alt="Diya Pathania logo" class="logo-img" />
         <span>Diya Pathania</span>
       </a>
       <nav aria-label="Primary">
@@ -43,14 +34,21 @@
     </div>
   </header>
 
-  <main class="wrap">
+  <!-- Layout -->
+  <main class="wrap post-layout">
+    <!-- ToC (sticky on desktop, collapsible on mobile) -->
+    <aside class="toc" id="toc">
+      <button id="toggleToc" type="button" aria-expanded="false" aria-controls="tocList">On this page ▾</button>
+      <ol id="tocList"></ol>
+    </aside>
+
+    <!-- Article -->
     <article class="post">
       <header class="post-head">
-        <p class="post-kicker chip">SEO • Playbook</p>
         <h1 class="post-title">Technical SEO for Narrative Brands</h1>
 
         <div class="post-meta">
-          <img src="../assets/avatar.jpg" alt="Diya Pathania" class="post-author" />
+          <img src="../logo.jpeg"Diya Pathania" class="post-author" />
           <span>By Diya Pathania</span>
           <span aria-hidden="true">·</span>
           <time datetime="2025-09-26">26 Sep 2025</time>
@@ -64,16 +62,6 @@
         </figure>
       </header>
 
-      <!-- ToC -->
-      <aside class="toc collapsed" aria-label="Table of contents" id="toc">
-  <strong>On this page</strong>
-  <ol id="tocList"></ol>
-  <button id="toggleToc" type="button" aria-expanded="false" aria-controls="tocList">
-    Show all
-  </button>
-</aside>
-
-
       <div class="post-content prose" id="content">
         <p>Most SEO advice treats your site like a vending machine: insert keywords, dispense traffic. Narrative brands don’t work that way. You’re not trying to win a single query; you’re trying to install a story in people’s heads and make it retrievable on demand. Technical SEO, then, is not page-speed cosmetology. It’s memory architecture. It’s the system that makes your story crawlable, renderable, and linkable at scale—without dumbing it down.</p>
 
@@ -82,10 +70,10 @@
         <h2 id="architecture-is-narrative-not-furniture">1) Architecture is narrative, not furniture</h2>
         <p>If your site map looks like a warehouse of pages, you’ve already lost. Bots don’t “discover your brand”; they traverse a graph. Build that graph like a book.</p>
 
-        <div class="illustration">
+        <figure class="illustration">
           <img src="../assets/blog/hub-spoke.png" alt="Hub and spoke architecture diagram" />
           <figcaption>Hubs as chapters, spokes as scenes. Predictable routes = predictable meaning.</figcaption>
-        </div>
+        </figure>
 
         <ul>
           <li><strong>Hubs are chapters.</strong> Each hub targets a problem statement and an entity (topic + audience + outcome). Hubs must be indexable, internally popular (linked from top nav and footer), and semantically rich (definitions, FAQs, relationships, examples).</li>
@@ -132,6 +120,7 @@
           <li>Client-only for dashboards/gated utilities, not lighthouse content.</li>
           <li>Pre-render titles/meta/schema/primary copy; don’t hide headlines post-hydration.</li>
         </ul>
+
         <blockquote class="highlight">
           Think of rendering like subtitles: if they don’t ship with the film, most people will miss the plot.
         </blockquote>
@@ -167,7 +156,7 @@
 
         <h2 id="internal-linking-as-memory">6) Internal linking as memory retrieval</h2>
         <ul>
-          <li>Editorial anchors in paragraphs (&ldquo;SEO migration checklist&rdquo;), not “click here”.</li>
+          <li>Editorial anchors in paragraphs (“SEO migration checklist”), not “click here”.</li>
           <li>Hubs receive 20+ editorial links; spokes 5–8.</li>
           <li>Intro &amp; conclusion links carry more weight than footer dumps.</li>
         </ul>
@@ -268,11 +257,13 @@
 
         <nav class="post-nav" aria-label="Post navigation">
           <a class="prev" href="perception-architecture-playbook.html">← Perception Architecture Playbook</a>
+          <a class="next" href="#">Next →</a>
         </nav>
       </footer>
     </article>
   </main>
 
+  <!-- Footer -->
   <footer class="foot">
     <div class="wrap footgrid--simple">
       <div><strong>Diya Pathania</strong><br /> SEO Consultant &amp; Perception Architect — India</div>
@@ -286,10 +277,13 @@
   <script>
     (function () {
       const content = document.getElementById('content');
+
+      // Read time
       const words = (content.textContent || "").trim().split(/\s+/).filter(Boolean).length;
       const mins = Math.max(1, Math.round(words / 220));
       const rt = document.getElementById('readtime'); if (rt) rt.textContent = mins + ' min read';
 
+      // Build ToC from H2s
       const tocList = document.getElementById('tocList');
       const heads = content.querySelectorAll('h2');
       heads.forEach((h, i) => {
@@ -304,12 +298,20 @@
         tocList.appendChild(li);
       });
 
+      // ToC toggle (mobile)
+      const toggle = document.getElementById('toggleToc');
+      toggle.addEventListener('click', () => {
+        tocList.classList.toggle('show');
+        const expanded = toggle.getAttribute('aria-expanded') === 'true';
+        toggle.setAttribute('aria-expanded', String(!expanded));
+      });
+
+      // Reading progress
       const progress = document.getElementById('readProgress');
       const calc = () => {
-        const h = document.querySelector('.post').getBoundingClientRect();
-        const total = h.height - window.innerHeight;
-        const scrolled = Math.max(0, Math.min(total, window.scrollY - (h.top + window.scrollY)));
-        const pct = total > 0 ? (scrolled / total) * 100 : 0;
+        const docH = document.documentElement.scrollHeight - window.innerHeight;
+        const scrolled = window.scrollY;
+        const pct = docH > 0 ? (scrolled / docH) * 100 : 0;
         progress.style.width = pct + '%';
       };
       window.addEventListener('scroll', calc, { passive: true });
