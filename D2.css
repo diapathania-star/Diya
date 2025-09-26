@@ -246,3 +246,18 @@ a.link:focus-visible, .btn:focus-visible, .acc button:focus-visible {
   border-radius: 50%;   /* keeps it circular */
   object-fit: cover;    /* makes sure it crops nicely */
 }
+
+.hero-art {
+  aspect-ratio: 3/4;
+  border-radius: var(--radius-lg);
+  border: 1px solid #EAE8E2;
+  box-shadow: var(--shadow-m);
+  overflow: hidden; /* important so rounded corners apply to the image */
+}
+
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* keeps proportions and crops gracefully */
+  display: block;
+}
