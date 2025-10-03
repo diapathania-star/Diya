@@ -1,6 +1,6 @@
 :root{
   /* Calm TPS palette (you can swap sand/paper later) */
-  --sand:#ecdae7;
+  --sand:#E6E6FA;
   --paper:#ebf7f3;
   --sage:#7E8F7B;
   --charcoal:#2F2F2F;
@@ -191,7 +191,7 @@ textarea{min-height:110px; resize:vertical}
 .btn:hover{opacity:.92}
 
 /* Footer (simple) */
-.foot{margin-top:38px; padding:18px 0 34px; color:#555; border-top:1px solid #EAE8E2}
+.foot{margin-top:38px; padding:18px 0 34px; color:#555; border-top:1px solid #bba565}
 .footgrid--simple{display:grid; grid-template-columns:1fr auto; gap:16px; align-items:start}
 .foot-right{text-align:right}
 .foot .link{color:#4b4b4b; text-decoration:none}
