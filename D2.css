@@ -443,7 +443,7 @@ em, blockquote{
 .hero{
   position: relative;
   /* use the live lavender sand only for hero scope */
-  --sand: #e6e6fa93;
+  --sand: #e6effa85;
   /* cancel the earlier local "HERO SECTION FIX" background */
   background: transparent;
   backdrop-filter: none;
