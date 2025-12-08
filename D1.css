@@ -1136,13 +1136,16 @@ h3.card-title {
 .footer-social a img {
   width: 24px;
   height: 24px;
-  filter: brightness(0) invert(1); /* Turns SVGs white */
-  opacity: 0.7;
-  transition: opacity 0.15s ease;
+  filter: none;               /* remove the flattening filter */
+  background: transparent;    /* prevent accidental white bg */
+  opacity: 0.85;
+  transition: opacity 0.15s ease, transform 0.15s ease;
+  display: block;
 }
 
 .footer-social a:hover img {
   opacity: 1;
+  transform: translateY(-2px);
 }
 
 /* Copyright line at the very bottom */
@@ -1362,3 +1365,4 @@ h3.card-title {
   box-sizing: border-box; 
   font-size: 1rem;
 }
+
