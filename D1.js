@@ -381,7 +381,7 @@
         // update panel content
         titleEl.textContent = data.title;
         bodyEl.textContent = data.body;
-        linkEl.href = 'pillars.html' + data.hash; // change file name if needed
+        linkEl.href = 'comingsoon.html' + data.hash; // change file name if needed
       });
     });
   }
@@ -392,3 +392,4 @@
     initPillars();
   }
 })();
+
